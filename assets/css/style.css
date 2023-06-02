@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 * {
     font-family: Oswald, sans-serif;
 }
-p{
+
+p {
     margin-bottom: 0rem;
 }
+
 /* header css */
 header {
     padding-top: 10px;
@@ -229,7 +232,8 @@ body {
 .b-i-container {
     display: flex;
     justify-content: space-between;
-    gap: 85px;
+    width: 100%;
+    padding: 10px 10px;
     align-items: flex-end;
     flex-wrap: wrap;
 }
@@ -284,31 +288,38 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
-.table-main{
+
+.table-main {
     padding-left: 25px;
     padding-right: 25px;
     width: 100%;
     padding-top: 2.5rem;
 }
+
 td {
     color: #0c0f48;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
- td h4 {
+td h4 {
     font-family: Oswald;
     font-size: 16px;
     margin: 0;
     opacity: 1;
     white-space: nowrap;
 }
+
 tr {
-margin-bottom: 1rem;}
+    margin-bottom: 1rem;
+}
+
 th {
     color: #0c0f48;
     padding: 0 12px;
+    white-space: nowrap;
 }
+
 .pointer {
     font-family: Oswald;
     font-size: 16px;
@@ -316,38 +327,50 @@ th {
     letter-spacing: 1px;
     margin: 0 0 -5px;
 }
+
 .color-red {
     color: #da5757;
 }
+
 .color-green {
     color: #5dc7c2;
 }
-.light-theme-text{
+
+.light-theme-text {
     color: black;
 }
-.black-theme-text{
+
+.black-theme-text {
     color: white;
 }
-.light-theme{
+
+.light-theme {
     background-color: white;
 }
-.black-theme{
+
+.black-theme {
     background-color: #191d28 !important;
     ;
 }
-.light-theme-v2{
-    background-color:  #f8f9fa !important;
+
+.light-theme-v2 {
+    background-color: #f8f9fa !important;
 }
-.black-theme-v2{
+
+.black-theme-v2 {
     background-color: #2e3241 !important;
 }
-.footer-text, .footer-text-link {
+
+.footer-text,
+.footer-text-link {
     color: #888686;
 }
-.black-theme-text-v2{
+
+.black-theme-text-v2 {
     color: #fff !important;
 }
-.light-theme-text-v2{
+
+.light-theme-text-v2 {
     color: #0c0f48 !important;
 }
 
@@ -356,4 +379,53 @@ th {
     padding-right: 12px;
     font-size: 12px;
     font-weight: 400;
+}
+
+@media screen and (max-width:1024px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .fit-logo {
+        height: 50px;
+        width: unset;
+    }
+
+    .logo-container {
+        width: unset;
+    }
+
+    .information {
+        font-size: 14px;
+    }
+
+    .information-title {
+        font-size: 14px;
+    }
+
+    .information-main {
+        font-size: 14px;
+    }
+
+    .information-title-main {
+        font-size: 14px;
+    }
+
+    .table-main {
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: scroll;
+    }
+
+    .b-p-text p {
+        font-size: 14px;
+    }
+
+    .Buy-header {
+        padding: 0px;
+        white-space: nowrap;
+    }
 }
